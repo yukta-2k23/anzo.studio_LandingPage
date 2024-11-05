@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height:100%;
+    width: 100%;
+    padding:10px;
+    position: relative;
+}
+.navbar{
+    height:100vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.navtop button{
+    padding:12px 40px;
+    font-size:1em;
+    color:white;
+    background-color: black;
+    border:5px solid white;
+    border-radius:30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    animation-name: buttonScale;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes buttonScale{
+    from{
+        scale:1;
+    }
+    to{
+        scale:1.05;
+    }
+}
+.navtop h5{
+    font-size: 2em;
+    color:#575656;
+    opacity:0.5;
+}
+.navbottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.navbottom img{
+    height:70px;
+    animation-name: tagRotate;
+    animation-duration: 4s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes tagRotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.content{
+    height: 100%;
+    width:100%;
+    border-radius: 20px;
+    padding:60px;
+    background-image: url("https://static.wixstatic.com/media/f1c650_678c0ceab5194893872c60fa3be4bcdc~mv2.jpg/v1/fill/w_1857,h_789,fp_0.69_0.64,q_85,usm_0.66_1.00_0.01,enc_auto/ANZO.jpg");
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    perspective: 1000px;
+    overflow: hidden;
+}
+.content img{
+    height:70px;
+}
+.content h1{
+    margin:3.5em 0 1em 0;
+    font-size: 2.2em;
+
+}
+.content h5{
+    font-size: 1em;
+    font-weight: 600;
+}
+.content h6{
+    font-size: 1.2em;
+    color:#575656;
+    font-weight: 200;
+}
+.content .darkmode{
+    color:black;
+}
+.content .designer{
+    font-size: 2.6em;
+    line-height: 0.7;
+}
